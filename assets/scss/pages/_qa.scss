@@ -1,0 +1,35 @@
+.question{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h2{
+        padding-left: 16px;
+        border-left:solid 8px $color_r ;
+        margin-bottom: 32px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .box{
+        margin-bottom: 32px;
+        max-width: 856px;
+        h3{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media screen and (max-width:376px) {
+    .question{
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .fw-b2{
+            font-weight: bold;
+        }
+        .box{
+            height: 3P;
+        }
+    }
+}

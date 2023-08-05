@@ -1,0 +1,66 @@
+.bg-r{
+    background-color: $color_r;
+}
+.bg-w{
+    background-color: $color_w;
+}
+.col-w{
+    color: $color_w;
+}
+.col-r{
+    color: $color_r;
+}
+
+.col-gray{
+    color: #707070;
+}
+.fz-14{
+    color: $color_w;
+    font-size: 14px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-24{
+    font-size: 24px;
+    color: $color_r;
+}
+.fz-36{
+    font-size: 36px;
+}
+.fz-48{
+    font-size: 48px;
+}
+.fz-64{
+    font-size: 64px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-72{
+    margin-bottom: 72px;
+}
+.p-80{
+    padding: 80px 0;
+}
+.tx-r{
+    text-align: right;
+}
+.fw-b{
+    font-weight: bold;
+}
+.bd-r{
+    border-right: 1px solid #e9c8c8;
+}

@@ -1,4 +1,154 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-list{
+  display: flex;
+  justify-content: space-between;
+  li{
+     padding-right: 24px;
+      a{
+          color: $color_w;
+          font-size: 20px;
+          &:hover{
+              opacity: .8;
+              }
+      }
+  }
+}
+
+.section-T{
+  padding-top: 60px;
+  margin-bottom: 36px;
+  .list{
+      li{
+          a{
+              font-size: 16px;
+          }
+      }
+  }
+  .social-img{
+      display: flex;
+     img{
+      max-width: 48px;
+      margin-left: 32px;
+      &:hover{
+          opacity: .8;
+          }
+     }
+  }
+}
+.section-M{
+  .container{
+      border-bottom: 1px solid $color_w;
+      padding-bottom: 30px;
+  }
+  .phone,.email{
+      height: 54px;
+      display: flex;
+      align-items: center;
+  }
+  .material-symbols-outlined{
+      color: $color_w;
+      font-size: 36px;
+      margin-right: 22px;
+  }
+}
+.section-B{
+  padding-top: 30px;
+  padding-bottom: 32px; 
+  .terms{
+      li{
+          padding-left: 48px;
+          a{
+              font-size: 14px;
+              color: $color_w;
+          }
+      }
+  }
+}
+.sectionPhone{
+  display: none;
+}
+
+@media screen and (max-width:768px){
+  .footer-list{
+      li{
+          a{
+              color: $color_w;
+              font-size: 16px;
+          }
+      }
+  }
+
+  .section-T{
+      padding-top: 48px;
+      margin-bottom: 36px;
+      .list{
+          li{
+              a{
+                  font-size: 16px;
+              }
+          }
+      }
+      .social-img{
+         img{
+          max-width: 40px;
+          height: auto;
+          margin-left: 16px;
+         }
+      }
+  }
+}
+
+@media screen and (max-width:376px){
+ .Footer{
+  padding: 0 13px;
+ }
+  .section-T,.section-M{
+      display: none;
+  }
+  .sectionPhone{
+      display: inline-block;
+      padding-top: 27px;
+      .container{
+          border-bottom: solid 1px $color_w;
+          padding-bottom: 16px;
+          width: 100%;
+      }
+      .material-symbols-outlined {
+          color:$color_w;
+          width: 24px;
+          margin-right: 11px;
+      }
+      .phone,.email{
+          display: flex;
+      }
+      .left{
+          margin-right: 57px;
+      }
+      .social-img{
+         display: flex;
+          li{
+              width: 100%;
+              img{
+                  width: 24px;
+                  margin-left: 8px;
+                  
+              }
+          }
+      }
+  }
+
+  .section-B{
+      .logoText{
+          margin-bottom: 8px;
+      }
+      .terms{
+          li{
+              padding-left: 0;
+              margin-bottom: 8px;
+              a{
+                  font-size: 16px;
+              }
+          }
+      }
+  }
+  
 }
