@@ -64,3 +64,46 @@
 .bd-r{
     border-right: 1px solid #e9c8c8;
 }
+
+.d-f{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.container-s{
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media  screen and (max-width:769px) {
+    .container{
+        max-width: 841px;
+        padding: 0 36px;
+    }
+    .container-s{
+        max-width: 708px;
+        margin: 0 auto;
+        padding: 0 36px;
+    }
+}
+@media  screen and (max-width:376px) {
+    .container{
+        max-width: 402px;
+        padding: 0 13px;
+    }
+    .container-s{
+        max-width: 402px;
+        margin: 0 auto;
+        padding: 0 13px;
+    }
+    .d-b{
+        display: block;
+    }
+    
+}

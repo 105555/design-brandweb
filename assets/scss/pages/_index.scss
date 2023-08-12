@@ -1,5 +1,5 @@
 .banner{
-  background-image: url(../img/home-header.png);
+  background-image: url(./../images/home-header.png);
   background-size: cover ;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,7 +30,7 @@
 }
 @media screen and (max-width:769px){
   .banner{
-      background-image: url(../img/home-header-sm.png);
+      background-image: url(./../images/home-header-sm.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -76,6 +76,7 @@
 .major{
   text-align: center;
   font-weight: bold;
+  padding: 80px 0;
   .majorTitle{
       margin-bottom: 33px;
       font-size: 48px;
@@ -109,7 +110,8 @@
       }
    }
    @media screen and (max-width:376px){
-    
+    .major{
+        padding: 40px 0;
       .majorTitle{
           font-size: 24px;
           margin-bottom: 33px;
@@ -122,6 +124,7 @@
           }
        
       }
+    }
    }
 }
 
@@ -129,7 +132,7 @@
 
 .local{
   text-align: center;
-  padding: 0 -12px;
+  padding: 80px 0;
   .localTitle{
       margin-bottom: 48px;
       h2{
@@ -199,7 +202,7 @@
 }
 
 .jointlyBgImg{
-  background-image: url(../img/index-bg.png);
+  background-image: url(./../images/index-bg.png);
   background-size: cover  ;
   background-repeat: no-repeat;
   background-position: center;
@@ -230,7 +233,7 @@
 
 @media screen and (max-width:769px){
  .jointlyBgImg{
-  background-image: url(../img/index-bg-sm.png);
+  background-image: url(./../images/index-bg-sm.png);
   .jointlyContent{
       display: block;
       .jointly-container{
@@ -245,7 +248,7 @@
 }
 @media screen and (max-width:376px){
   .jointlyBgImg{
-   background-image: url(../img/index-bg-md.png);
+   background-image: url(./../images/index-bg-md.png);
    padding: 40px 0;
    .jointly{
       text-align: center;

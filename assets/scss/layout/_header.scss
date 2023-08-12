@@ -49,9 +49,10 @@
           width: 50%;
           border:solid 1px #ffffff;
           text-align: center;
-          padding: 12px;
-          a{
-              color:#ffffff;
+          a{ 
+            display: block;
+            padding: 0 40px;
+            color:#ffffff;
               
           }
       }
