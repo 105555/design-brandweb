@@ -1,4 +1,4 @@
-# Vite 範例
+#  GlassesWeb
 ## GitHub Pages : https://105555.github.io/Week4_RWDWeb_Vite/
   - 以Vite環境開發眼鏡官網
   - RWD (PC、iPad、mobile)
