@@ -1,5 +1,6 @@
 # Vite 範例
-## GitHub Pages: https://105555.github.io/Week4-ViteGlasses/
+## GitHub Pages: 
+  - https://105555.github.io/Week4-ViteGlasses/
   - 以Vite環境開發眼鏡官網
   - RWD (PC、iPad、mobile)
 ## Node.js 版本
