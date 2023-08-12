@@ -1,5 +1,7 @@
-# 網頁切版直播班 Vite 範例
-
+# Vite 範例
+## GitHub Pages: https://105555.github.io/Week4-ViteGlasses/
+  - 以Vite環境開發眼鏡官網
+  - RWD (PC、iPad、mobile)
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
   - 查看自己版本指令：`node -v`
