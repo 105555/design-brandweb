@@ -50,11 +50,11 @@ table {
 
 *, *::after, *::before {
   box-sizing: border-box;
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 body {
   line-height: 1.5;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 img {
@@ -65,49 +65,6 @@ a {
   text-decoration: none;
 }
 
-.d-f {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
-
-.container-s {
-  max-width: 660px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
-
-@media screen and (max-width: 769px) {
-  .container {
-    max-width: 841px;
-    padding: 0 36px;
-  }
-  .container-s {
-    max-width: 708px;
-    margin: 0 auto;
-    padding: 0 36px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .container {
-    max-width: 402px;
-    padding: 0 13px;
-  }
-  .container-s {
-    max-width: 402px;
-    margin: 0 auto;
-    padding: 0 13px;
-  }
-  .d-b {
-    display: block;
-  }
-}
 .bg-r {
   background-color: #AA0601;
 }
@@ -194,6 +151,49 @@ a {
   border-right: 1px solid #e9c8c8;
 }
 
+.d-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.container-s {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 841px;
+    padding: 0 36px;
+  }
+  .container-s {
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 0 36px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container {
+    max-width: 402px;
+    padding: 0 13px;
+  }
+  .container-s {
+    max-width: 402px;
+    margin: 0 auto;
+    padding: 0 13px;
+  }
+  .d-b {
+    display: block;
+  }
+}
 .footer-list {
   display: flex;
   justify-content: space-between;
@@ -241,6 +241,9 @@ a {
   font-size: 36px;
   margin-right: 22px;
 }
+.section-M a {
+  font-size: 36px;
+}
 
 .section-B {
   padding-top: 30px;
@@ -271,9 +274,12 @@ a {
     font-size: 16px;
   }
   .section-T .social-img img {
-    max-width: 40px;
+    max-width: 25px;
     height: auto;
     margin-left: 16px;
+  }
+  .section-M a {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -284,13 +290,17 @@ a {
     display: none;
   }
   .sectionPhone {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     padding-top: 27px;
   }
   .sectionPhone .container {
     border-bottom: solid 1px #FBF2F2;
     padding-bottom: 16px;
-    width: 100%;
+    max-width: 100%;
+  }
+  .sectionPhone .container .left {
+    width: 50%;
   }
   .sectionPhone .material-symbols-outlined {
     color: #FBF2F2;
@@ -301,7 +311,7 @@ a {
     display: flex;
   }
   .sectionPhone .left {
-    margin-right: 57px;
+    margin-left: -7px;
   }
   .sectionPhone .social-img {
     display: flex;
@@ -325,7 +335,7 @@ a {
   }
 }
 .banner {
-  background-image: url(../img/home-header.png);
+  background-image: url(./../images/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,9 +363,9 @@ a {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .banner {
-    background-image: url(../img/home-header-sm.png);
+    background-image: url(./../images/home-header-sm.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -392,6 +402,7 @@ a {
 .major {
   text-align: center;
   font-weight: bold;
+  padding: 80px 0;
 }
 .major .majorTitle {
   margin-bottom: 33px;
@@ -416,16 +427,20 @@ a {
 .major .majorService .box p {
   text-align: left;
 }
-@media screen and (max-width: 769px) {
-  .major .majorService {
+
+@media screen and (max-width: 768px) {
+  .majorService {
     flex-wrap: wrap;
     padding: 0 36px;
   }
-  .major .majorService .box {
+  .majorService .box {
     width: max(50%, 83px);
   }
 }
 @media screen and (max-width: 376px) {
+  .major {
+    padding: 40px 0;
+  }
   .major .majorTitle {
     font-size: 24px;
     margin-bottom: 33px;
@@ -438,10 +453,9 @@ a {
     width: max(100%, 83px);
   }
 }
-
 .local {
   text-align: center;
-  padding: 0 -12px;
+  padding: 80px 0;
 }
 .local .localTitle {
   margin-bottom: 48px;
@@ -451,9 +465,10 @@ a {
 }
 .local .localIntro {
   display: flex;
+  max-width: 100%;
 }
 .local .localIntro .local-container {
-  width: 33%;
+  width: 100%;
   padding: 12px;
 }
 .local .localIntro .local-container img {
@@ -463,10 +478,10 @@ a {
 .local .localIntro .local-container h3 {
   font-weight: bold;
   padding: 5px 10px;
-  font-size: 34px;
+  font-size: 26px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .local .localIntro {
     display: inline-block;
   }
@@ -482,7 +497,7 @@ a {
   }
 }
 @media screen and (max-width: 376px) {
-  .p-80 {
+  .local {
     padding: 40px 0;
   }
   .local h2.fz-48 {
@@ -506,7 +521,7 @@ a {
   }
 }
 .jointlyBgImg {
-  background-image: url(../img/index-bg.png);
+  background-image: url(./../images/index-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -533,9 +548,9 @@ a {
   font-style: italic;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .jointlyBgImg {
-    background-image: url(../img/index-bg-sm.png);
+    background-image: url(./../images/index-bg-sm.png);
   }
   .jointlyBgImg .jointlyContent {
     display: block;
@@ -549,7 +564,7 @@ a {
 }
 @media screen and (max-width: 376px) {
   .jointlyBgImg {
-    background-image: url(../img/index-bg-md.png);
+    background-image: url(./../images/index-bg-md.png);
     padding: 40px 0;
   }
   .jointlyBgImg .jointly {
@@ -654,12 +669,14 @@ a {
 }
 .contact .send {
   text-align: center;
+  margin: 0 auto;
+  max-width: 354px;
 }
 .contact .send button {
-  padding: 12px 142px;
   background-color: #AA0601;
+  padding: 16px 0;
+  width: 100%;
   color: #ffffff;
-  max-width: 100%;
   height: auto;
   cursor: pointer;
 }
@@ -667,7 +684,7 @@ a {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .contact .contactForm input {
     width: 100%;
     height: 36px;
@@ -720,9 +737,6 @@ a {
   .question .fw-b2 {
     font-weight: bold;
   }
-  .question .box {
-    height: 3P;
-  }
 }
 .logo img {
   max-width: 80px;
@@ -768,9 +782,10 @@ a {
     width: 50%;
     border: solid 1px #ffffff;
     text-align: center;
-    padding: 12px;
   }
   .listPhone li a {
+    display: block;
+    padding: 0 40px;
     color: #ffffff;
   }
 }/*# sourceMappingURL=all.css.map */

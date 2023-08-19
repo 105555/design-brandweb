@@ -2,3 +2,15 @@ $color_w:#FBF2F2;
 $color_b:#000000;
 $color_r:#AA0601;
 $color_rr: #650300;
+
+@mixin ipad{
+    @media screen and (max-width:768px) {
+        @content ;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:376px) {
+        @content ;
+    }
+}

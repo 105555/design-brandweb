@@ -23,7 +23,7 @@
   display: none;
 }
   
-@media screen and (max-width:768px) {
+@include ipad{
 
   .logo{
       img{
@@ -38,7 +38,7 @@
  
 }
 
-@media screen and (max-width:376px){
+@include mobile{
   .list{
       display: none;
   }

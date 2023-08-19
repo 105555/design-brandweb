@@ -49,6 +49,9 @@
       font-size: 36px;
       margin-right: 22px;
   }
+  a{
+    font-size: 36px;  
+  }
 }
 .section-B{
   padding-top: 30px;
@@ -67,7 +70,7 @@
   display: none;
 }
 
-@media screen and (max-width:768px){
+@include ipad{
   .footer-list{
       li{
           a{
@@ -89,15 +92,22 @@
       }
       .social-img{
          img{
-          max-width: 40px;
+          max-width: 25px;
           height: auto;
           margin-left: 16px;
          }
       }
   }
+
+  .section-M{
+    a{
+        font-size: 20px;
+    }
+  }
+  
 }
 
-@media screen and (max-width:376px){
+@include mobile{
  .Footer{
   padding: 0 13px;
  }
@@ -108,10 +118,14 @@
       display: flex;
       justify-content: space-between;
       padding-top: 27px;
+      
       .container{
           border-bottom: solid 1px $color_w;
           padding-bottom: 16px;
-          width: 100%;
+          max-width: 100%;
+          .left{
+            width: 50%;
+          }
       }
       .material-symbols-outlined {
           color:$color_w;

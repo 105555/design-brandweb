@@ -28,7 +28,7 @@
       
   } 
 }
-@media screen and (max-width:769px){
+@include ipad{
   .banner{
       background-image: url(./../images/home-header-sm.png);
       background-size: cover;
@@ -39,7 +39,7 @@
  
 } 
 
-@media screen and (max-width:376px){
+@include mobile{
   .banner{
       background-position: left center;
       .text{
@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (max-width:769px){
+@include ipad{
     .majorService{
         flex-wrap: wrap;
         padding: 0 36px;
@@ -112,7 +112,7 @@
     }
  }
 
-@media screen and (max-width:376px){
+ @include mobile{
     .major{
         padding: 40px 0;
       .majorTitle{
@@ -143,23 +143,25 @@
   }
   .localIntro{
      display: flex;
+     max-width: 100%;
       .local-container{
-          width: 33%;
+         width: 100%;
           padding: 12px;
           img{
               width: 100%;
               margin-bottom: 8px;
           }
           h3{
-              font-weight: bold;
-              padding: 5px 10px;
-              font-size: 34px;
+            font-weight: bold;
+            padding: 5px 10px;
+            font-size: 26px;
           }
+            
       }
   }
 }
 
-@media  screen and (max-width:769px) {
+@include ipad{
   .local{
       .localIntro{
           display: inline-block;  
@@ -176,7 +178,7 @@
       }
   }
 }
-@media  screen and (max-width:376px) {
+@include mobile{
   .local{
     padding: 40px 0;
       h2.fz-48{
@@ -231,7 +233,7 @@
   }
 }
 
-@media screen and (max-width:769px){
+@include ipad{
  .jointlyBgImg{
   background-image: url(./../images/index-bg-sm.png);
   .jointlyContent{
@@ -246,7 +248,7 @@
   }
  }
 }
-@media screen and (max-width:376px){
+@include mobile{
   .jointlyBgImg{
    background-image: url(./../images/index-bg-md.png);
    padding: 40px 0;
@@ -365,11 +367,13 @@
   }
   .send{
       text-align: center;
+      margin: 0 auto;
+      max-width: 354px;
      button{
-      padding: 12px 142px;
       background-color: $color_r;
+      padding: 16px 0;
+      width: 100%;
       color: #ffffff;
-      max-width: 100%;
       height: auto;
       cursor: pointer;
       &:hover{
@@ -379,7 +383,7 @@
   }
 }
 
-@media screen and (max-width:769px){
+@include ipad{
   .contact{
       .contactForm{
          input{
@@ -400,17 +404,20 @@
       }
   }
 }
-@media screen and (max-width:376px){
-  .contact{
-      .contactTitle{
-          h2{
-              text-align: center;
-              font-weight: bold;
-              font-size: 24px;
-              margin-bottom: 24px;
-          }
-      }
-  }
-  
+
+@include mobile{
+    .contact{
+        .contactTitle{
+            h2{
+                text-align: center;
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
 }
+  
+  
+
 
