@@ -25,5 +25,5 @@
 
 ### 專案呈現 : <https://105555.github.io/Design_BrandWebSite/>
 
-### 注意事項
+### ***注意事項***
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
