@@ -21,7 +21,7 @@
 
 ## 部署 gh-pages 流程說明
 - -> 執行 `npm run deploy` 指令進行自動化部署
-  - 自動生成dist資料夾，無需進行打包
+  - 自動生成 dist 資料夾，無需進行打包
 
 ### 專案呈現 : <https://105555.github.io/Design_BrandWebSite/>
 
