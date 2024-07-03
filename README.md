@@ -20,8 +20,10 @@
 - `npm run deploy` - 自動化部署
 
 ## 部署 gh-pages 流程說明
-- 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+- -> 執行 `npm run build` 指令進行打包
+- -> 執行 `npm run deploy` 指令進行自動化部署
 
+### 專案呈現 : <https://105555.github.io/Design_BrandWebSite/>
 
 ### 注意事項
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
