@@ -23,7 +23,7 @@
 - -> 執行 `npm run deploy` 指令進行自動化部署
   - 自動生成 dist 資料夾，無需進行打包
 
-### 專案呈現 : <https://105555.github.io/design-brandweb/index.html>
+### 專案呈現 : <https://105555.github.io/design-brandweb/index>
 
 ### **注意事項**
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
